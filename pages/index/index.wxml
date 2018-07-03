@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='text'>
+  <text>精选主题</text>
+</view>
+<view class='mg'>
+  <view class='mg-1'>
+    <image class='img-1' src='/img/zt-4.jpg' />
+  </view>
+  <view class='mg-1'>
+    <image class='img-1' src='/img/zt-2.jpg' />
+  </view>
+</view>
+<view class='mg1'>
+  <image class='img-2' src='/img/zt-5.jpg' />
+</view>
+<view class='mg2'>
+  <image class='img-3' src='/img/zt-3.jpg' />新品主题
+</view>
+<view>
+  <swiper class='img-4' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls2}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image1" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='background'></view>
+<view class='tx-1'>
+  <text>套系展示</text>
+</view>
+<view>
+    <view style='width: 250rpx;float: left;'>
+        <view><image class='tx-img' src='/img/tx-1.jpg'/></view>
+        <view class='tx-text1'>【渔洋诗】品质首选</view>
+        <view><text class='tx-text2'>￥2999.00</text></view>
+    </view>
+     <view style='width: 250rpx;float: left;'>
+        <view><image class='tx-img' src='/img/tx-2.jpg'/></view>
+        <view class='tx-text1'>【楹联从】店长推荐</view>
+        <view><text class='tx-text2'>￥1999.00</text></view>
+    </view>
+    <view style='width: 250rpx;float: left;'>
+        <view><image class='tx-img' src='/img/tx-3.jpg'/></view>
+        <view class='tx-text1'>【念奴娇】优惠精选</view>
+        <view><text class='tx-text2'>￥999.00</text></view>
+    </view>
+</view>
